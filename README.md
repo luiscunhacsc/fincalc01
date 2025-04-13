@@ -12,6 +12,22 @@ O nosso objetivo não é apenas dar-lhe o resultado final, mas sim **ensinar *co
 
 ---
 
+## ⚠️ Exclusão de Responsabilidade Importante ⚠️
+
+**Esta aplicação é fornecida estritamente para fins educacionais e de demonstração.**
+
+Embora tenham sido envidados esforços para assegurar a precisão dos cálculos e das explicações apresentadas, **não é oferecida qualquer garantia**, expressa ou implícita, quanto à exatidão, completude, fiabilidade ou adequação dos resultados para qualquer propósito específico.
+
+**É possível que existam erros, bugs, imprecisões nas fórmulas implementadas ou diferenças significativas** em relação aos algoritmos, convenções de arredondamento e funcionalidades específicas de calculadoras financeiras comerciais ou software profissional. Os cálculos complexos, como o Yield de obrigações, são aproximações que podem ter limitações.
+
+**Esta ferramenta NÃO constitui aconselhamento financeiro, de investimento, legal, contabilístico ou de qualquer outra natureza profissional.** As decisões financeiras comportam riscos e devem basear-se numa análise cuidada e, idealmente, na consulta com profissionais qualificados.
+
+O utilizador assume **total responsabilidade** pela verificação e utilização da informação e dos cálculos fornecidos por esta aplicação. **Em nenhuma circunstância será o autor responsável** por quaisquer perdas, danos (diretos, indiretos, consequenciais ou outros) ou decisões tomadas com base na utilização desta ferramenta.
+
+**Utilize por sua conta e risco.** Verifique sempre os resultados com fontes fidedignas antes de os aplicar em situações reais.
+
+---
+
 ## Funcionalidades em Destaque ✨
 
 Explore e pratique um vasto leque de conceitos financeiros essenciais:
