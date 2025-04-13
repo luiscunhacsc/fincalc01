@@ -137,7 +137,7 @@ with main_tabs[0]:
 
     **Comece por explorar as abas!**
     """)
-    st.image("https://educatechnology.com.br/wp-content/uploads/2022/04/HP-12C-x-BA-II-Plus-1.jpg", caption="Calculadoras Financeiras Comuns", width=300) # Placeholder image
+    # st.image("https://educatechnology.com.br/wp-content/uploads/2022/04/HP-12C-x-BA-II-Plus-1.jpg", caption="Calculadoras Financeiras Comuns", width=300) # Placeholder image
 
 # --- Aba: TVM & Amortização ---
 with main_tabs[1]:
@@ -1818,6 +1818,17 @@ with main_tabs[9]:
                     except Exception as e: st.error(f"Erro previsão X': {e}")
 
 
-# --- (Resto do código: Rodapé) ---
-st.sidebar.info("Desenvolvido como assistente educacional.")
-st.sidebar.caption(f"Data Atual: {pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')}")
+## --- Rodapé ---
+st.sidebar.info(
+    """
+    **Autor:** Luís Simões da Cunha (2025)
+    **Licença:** [CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/)
+    """
+)
+
+# Adicionar disclaimer breve ao caption
+current_time_str = pd.Timestamp.now().strftime('%Y-%m-%d %H:%M:%S')
+st.sidebar.caption(
+    f"Data Atual: {current_time_str} | "
+    "AVISO: Ferramenta Educacional. Sem garantias. Use por sua conta e risco."
+)
