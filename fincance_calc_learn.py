@@ -12,6 +12,7 @@ from scipy import stats # Adicionado para garantir que está importado para Esta
 # --- Configuração da Página ---
 st.set_page_config(layout="wide", page_title="Calculadora Financeira Educacional")
 
+
 st.title("Calculadora Financeira Educacional")
 st.caption("Uma ferramenta para aprender e usar conceitos financeiros.")
 
@@ -119,9 +120,29 @@ main_tabs = st.tabs([
 # --- Aba: Introdução ---
 with main_tabs[0]:
     st.header("Bem-vindo!")
+
+    # --- AVISO IMPORTANTE INSERIDO AQUI ---
+    st.warning("""
+    ### ⚠️ Aviso Importante
+
+    **Fins Educacionais:**
+    Esta aplicação foi desenvolvida com propósitos **puramente educacionais** para auxiliar na compreensão de conceitos financeiros e na simulação de funcionalidades de calculadoras financeiras.
+
+    **Sem Garantias:**
+    O autor **não oferece qualquer garantia** quanto à exatidão, fiabilidade ou adequação dos cálculos e resultados apresentados. Podem existir erros, omissões, ou diferenças em relação a calculadoras financeiras standard ou software profissional.
+
+    **Não é Aconselhamento Financeiro:**
+    A informação e as ferramentas aqui disponibilizadas **não constituem aconselhamento financeiro, de investimento, legal ou fiscal**. Qualquer decisão baseada nos resultados desta aplicação é da exclusiva responsabilidade do utilizador.
+
+    **Verificação Independente:**
+    Recomenda-se vivamente a **verificação independente** de todos os cálculos e resultados através de fontes fidedignas ou consultores profissionais antes de tomar qualquer decisão financeira.
+    """)
+    # --- FIM DO AVISO ---
+
+    # Resto do conteúdo original da Introdução
     st.markdown("""
     Esta aplicação foi criada para ajudar a compreender e utilizar os conceitos financeiros fundamentais,
-    muitas vezes calculados com calculadoras financeiras.
+    muitas vezes calculados com calculadoras como a Texas Instruments BA II Plus.
 
     **Navegação:**
     * Use as abas acima para selecionar a funcionalidade financeira que deseja explorar.
@@ -130,14 +151,15 @@ with main_tabs[0]:
         * **Calculadora:** Permite inserir os seus próprios valores e realizar os cálculos.
 
     **Convenção de Sinais (Importante!):**
-    Assim como é habitual nas calculadoras financeiras, usamos uma convenção de sinais para fluxos de caixa:
-    * **Entradas de Caixa (Dinheiro Recebido):** Valores positivos (+).
-    * **Saídas de Caixa (Dinheiro Pago/Investido):** Valores negativos (-).
+    Assim como na BA II Plus, usamos uma convenção de sinais para fluxos de caixa:
+    * **Entradas de Caixa (Dinheiro Recebido):** Valores positivos (+). [source: 203, 225]
+    * **Saídas de Caixa (Dinheiro Pago/Investido):** Valores negativos (-). [source: 203, 226, 342]
     * Por exemplo, ao contrair um empréstimo, o Valor Presente (PV) é positivo (recebe o dinheiro), e as Prestações (PMT) são negativas (paga o dinheiro). Ao investir, o PV é negativo (investe) e o FV pode ser positivo (resgata).
 
     **Comece por explorar as abas!**
     """)
-    # st.image("https://educatechnology.com.br/wp-content/uploads/2022/04/HP-12C-x-BA-II-Plus-1.jpg", caption="Calculadoras Financeiras Comuns", width=300) # Placeholder image
+    
+
 
 # --- Aba: TVM & Amortização ---
 with main_tabs[1]:
